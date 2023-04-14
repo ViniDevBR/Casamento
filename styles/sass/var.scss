@@ -32,7 +32,7 @@ body {
     $bg-color-gradient-A 0%,
     $bg-color-gradient-B 50%,
     $bg-color-gradient-C 90%
-  );
+  ) !important;
 
   min-height: 100vh;
   display: flex;

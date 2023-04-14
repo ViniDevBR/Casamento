@@ -17,7 +17,7 @@
 
 body {
   position: relative;
-  background: linear-gradient(180deg, #c7d5ed 0%, #dfe7f5 50%, #ffffff 90%);
+  background: linear-gradient(180deg, #c7d5ed 0%, #dfe7f5 50%, #ffffff 90%) !important;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -93,6 +93,7 @@ main .dataContainer .infoData {
 footer {
   width: 90%;
   margin-inline: auto;
+  padding-bottom: 50px;
 }
 footer ul {
   display: flex;

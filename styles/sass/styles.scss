@@ -48,6 +48,7 @@ main {
 footer {
   width: 90%;
   margin-inline: auto;
+  padding-bottom: 50px;
 
   ul {
     @include flex(flex, center, center, _);
