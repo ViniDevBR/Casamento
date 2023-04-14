@@ -154,6 +154,7 @@ footer ul .nomeDoLink {
 .modal section .close {
   align-self: normal;
   padding: 0 10px 10px 0;
+  cursor: pointer;
 }
 .modal section .transferencia {
   margin-top: 20px;
