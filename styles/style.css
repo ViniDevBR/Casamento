@@ -19,6 +19,10 @@ body {
   position: relative;
   background: linear-gradient(180deg, #c7d5ed 0%, #dfe7f5 50%, #ffffff 90%);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 body .florTOP {
   position: absolute;
@@ -63,7 +67,7 @@ main .dataContainer {
   justify-content: center;
   align-items: center;
   flex-direction: _;
-  margin-block: 10px;
+  margin-block: 20px;
   font-size: 2rem;
 }
 main .dataContainer .dataDetail {
@@ -88,7 +92,7 @@ main .dataContainer .infoData {
 
 footer {
   width: 90%;
-  margin: auto;
+  margin-inline: auto;
 }
 footer ul {
   display: flex;
@@ -165,6 +169,9 @@ footer ul .nomeDoLink {
   align-items: center;
   flex-direction: _;
   gap: 20px;
+}
+.modal section .giftContainer .titleOfGift {
+  color: #000000;
 }
 .modal section .giftContainer .infoContainerGift {
   display: flex;

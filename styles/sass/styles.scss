@@ -21,7 +21,7 @@ main {
   }
   .dataContainer {
     @include flex(flex, center, center, _);
-    margin-block: 10px;
+    margin-block: 20px;
     font-size: 2rem;
 
     .dataDetail {
@@ -47,7 +47,7 @@ main {
 
 footer {
   width: 90%;
-  margin: auto;
+  margin-inline: auto;
 
   ul {
     @include flex(flex, center, center, _);
@@ -112,6 +112,10 @@ footer {
     .giftContainer {
       @include flex(flex, _, center, _);
       gap: 20px;
+
+      .titleOfGift {
+        color: $text-color;
+      }
 
       .infoContainerGift {
         @include flex(flex, _, center, column);
