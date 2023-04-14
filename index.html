@@ -1,42 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Convite Digital</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./modal.js" defer></script>
+    <title>Convite Digital</title>
+  </head>
   <body>
+    <img class="florTOP" src="./assets/florTOP.png" alt="" />
+    <img class="florBOTTOM" src="./assets/florBOTTOM.png" alt="" />
     <header>
-      <h1>Vinicius e Mariana</h1>
-      <p>Convite para a celebração de casamento</p>
-    </header>    
+      <p>JUNTAMENTE COM SEUS PAIS</p>
+      <img class="logo" src="./assets/logoNome.png" alt="Vinicius e Mariana" />
+    </header>
+
     <main>
-      <h2>10 | abril | 2022</h2>
-      <p>Ás 18h</p>
-    </main>
-    <footer>
-      <p>Clique nos icones para ser redirecionado</p>
-      <div>
-        <ul>
-          <li>
-            <i>igreja</i>
-            <p>local de cerimonia</p>
-          </li>
-          <li>
-            <i>igreja</i>
-            <p>local de recepção</p>
-          </li>
-          <li>
-            <i>igreja</i>
-            <p>confirmação de presença</p>
-          </li>
-          <li>
-            <i>igreja</i>
-            <p>lista de presente</p>
-          </li>
-        </ul>
+      <p class="convite">
+        <span>Convidam para a cerimônia de seu</span>
+        <span>casamento a ser realizada em</span>
+      </p>
+      <div class="dataContainer">
+        <span class="infoData">SÁBADO</span>
+        <div class="dataDetail">
+          <span>JUL</span>
+          <span class="higherNumber">22</span>
+          <span>2023</span>
+        </div>
+        <span class="infoData">15:30</span>
       </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Terra+Nobre+Eventos/@-22.9361628,-47.3079704,18.25z/data=!4m16!1m9!3m8!1s0x94c8a527372738a3:0xb51fd84eb792280e!2sTerra+Nobre+Eventos!8m2!3d-22.9354885!4d-47.3074166!9m1!1b1!16s%2Fg%2F1pp2t_nq4!3m5!1s0x94c8a527372738a3:0xb51fd84eb792280e!8m2!3d-22.9354885!4d-47.3074166!16s%2Fg%2F1pp2t_nq4"
+            target="_blank"
+            class="iconBackground"
+          >
+            <img class="icon" src="./assets/map.svg" alt="" />
+          </a>
+          <p class="nomeDoLink">local de cerimônia</p>
+        </li>
+        <li>
+          <a href="#" class="iconBackground">
+            <img class="icon" src="./assets/gift.svg" alt="" />
+          </a>
+          <p class="nomeDoLink">Lista de Presente</p>
+        </li>
+        <li>
+          <div id="openModal" class="iconBackground">
+            <img class="icon" src="./assets/coin.svg" alt="" />
+          </div>
+          <p class="nomeDoLink">Presente em dinheiro</p>
+        </li>
+      </ul>
     </footer>
+
+    <div class="modal" id="modal">
+      <section>
+        <span class="close" id="closeModal">X</span>
+        <!-- <p>QR CODE PIX</p> -->
+        <img class="pix" src="./assets/QRCODEPIX.png" alt="QR CODE para pix" />
+        <p>CHAVE PIX: 19983100871</p>
+
+        <p class="transferencia">Transfêrencia</p>
+        <p>Banco Bradesco</p>
+        <p>Código do banco: 237</p>
+        <p>Agência: 322</p>
+        <p>Conta: 20201-0</p>
+      </section>
+    </div>
   </body>
 </html>

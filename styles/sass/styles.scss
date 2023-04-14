@@ -1,1 +1,108 @@
 @import './var.scss';
+
+header {
+  //margin-top: 110px;
+  padding-top: 70px;
+  @include flex(flex, _, center, column);
+  font-size: 1.6rem;
+
+  .logo {
+    width: 100%;
+    max-width: 320px;
+    margin-block: 10px;
+  }
+}
+
+main {
+  .convite {
+    text-align: center;
+    @include flex(flex, _, _, column);
+    font-size: 1.6rem;
+  }
+  .dataContainer {
+    @include flex(flex, center, center, _);
+    margin-block: 10px;
+    font-size: 2rem;
+
+    .dataDetail {
+      @include flex(flex, _, center, column);
+      margin-inline: 10px;
+
+      .higherNumber {
+        font-size: 3.5rem;
+      }
+    }
+
+    .infoData {
+      border-top: 1px solid $icon-color;
+      border-bottom: 1px solid $icon-color;
+      padding-block: 4px;
+      width: 9rem;
+      text-align: center;
+    }
+  }
+}
+
+footer {
+  width: 90%;
+  margin: auto;
+
+  ul {
+    @include flex(flex, center, center, _);
+
+    li {
+      @include flex(flex, _, center, column);
+      width: 96px;
+    }
+    .iconBackground {
+      @include flex(flex, center, center, _);
+      background-color: $icon-color;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .icon {
+      width: 20px;
+    }
+
+    .nomeDoLink {
+      margin-top: 10px;
+      text-align: center;
+      font-size: xx-small;
+    }
+  }
+}
+
+.modal {
+  font-size: 1.6rem;
+  @include flex(flex, center, center, _);
+  background-color: $bg-color-modal-overlay;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+
+  &.isModalOpen {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  section {
+    background-color: $bg-color-modal;
+    @include flex(flex, center, center, column);
+    padding: 25px;
+    border-radius: 16px;
+
+    .close {
+      align-self: normal;
+      padding: 0 10px 10px 0;
+    }
+
+    .transferencia {
+      margin-top: 20px;
+    }
+  }
+}
