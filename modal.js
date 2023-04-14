@@ -1,11 +1,22 @@
-const modal = document.querySelector('#modal')
-const openModal = document.querySelector('#openModal')
-const closeModal = document.querySelector('#closeModal')
+const modalMoney = document.querySelector('#modalPIX')
+const openModalMoney = document.querySelector('#openModal')
+const closeModalMoney = document.querySelector('#closeModal')
+const modalGift = document.querySelector('#modalPresente')
+const openModalGift = document.querySelector('#openModalGift')
+const closeModalGift = document.querySelector('#closeModalGift')
 
-openModal.addEventListener('click', () => {
-  modal.classList.add('isModalOpen')
+openModalMoney.addEventListener('click', () => {
+  modalMoney.classList.add('isModalOpen')
 })
 
-closeModal.addEventListener('click', () => {
-  modal.classList.remove('isModalOpen')
+closeModalMoney.addEventListener('click', () => {
+  modalMoney.classList.remove('isModalOpen')
+})
+
+openModalGift.addEventListener('click', () => {
+  modalGift.classList.add('isModalOpen')
+})
+
+closeModalGift.addEventListener('click', () => {
+  modalGift.classList.remove('isModalOpen')
 })

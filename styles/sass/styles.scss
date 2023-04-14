@@ -30,6 +30,8 @@ main {
 
       .higherNumber {
         font-size: 3.5rem;
+        color: $text-color2;
+        font-weight: bolder;
       }
     }
 
@@ -53,6 +55,7 @@ footer {
     li {
       @include flex(flex, _, center, column);
       width: 96px;
+      cursor: pointer;
     }
     .iconBackground {
       @include flex(flex, center, center, _);
@@ -103,6 +106,18 @@ footer {
 
     .transferencia {
       margin-top: 20px;
+    }
+
+    .giftContainer {
+      @include flex(flex, _, center, _);
+      gap: 20px;
+
+      .infoContainerGift {
+        @include flex(flex, _, center, column);
+      }
+      .logoGift {
+        width: 100px;
+      }
     }
   }
 }

@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#c7d5ed" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#c7d5ed" />
+    <meta name="msapplication-navbutton-color" content="#c7d5ed" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" href="./assets/logo.png" />
     <script src="./modal.js" defer></script>
     <title>Convite Digital</title>
   </head>
@@ -45,9 +49,9 @@
           <p class="nomeDoLink">local de cerimônia</p>
         </li>
         <li>
-          <a href="#" class="iconBackground">
+          <div class="iconBackground" id="openModalGift">
             <img class="icon" src="./assets/gift.svg" alt="" />
-          </a>
+          </div>
           <p class="nomeDoLink">Lista de Presente</p>
         </li>
         <li>
@@ -59,7 +63,7 @@
       </ul>
     </footer>
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modalPIX">
       <section>
         <span class="close" id="closeModal">X</span>
         <!-- <p>QR CODE PIX</p> -->
@@ -71,6 +75,39 @@
         <p>Código do banco: 237</p>
         <p>Agência: 322</p>
         <p>Conta: 20201-0</p>
+      </section>
+    </div>
+
+    <div class="modal" id="modalPresente">
+      <section>
+        <span class="close" id="closeModalGift">X</span>
+
+        <div class="giftContainer">
+          <a
+            class="infoContainerGift"
+            href="https://www.casasbahia.com.br/?utm_source=gp_branding&utm_medium=cpc&utm_campaign=gg_brd_inst_cb_exata&gclid=CjwKCAjw0N6hBhAUEiwAXab-TZbVtS02O85cY7Smomw3gVXUl66VGStD_5Cnlv22hVqN7ftQe7DB0hoCowAQAvD_BwE"
+            target="_blank"
+          >
+            <img
+              class="logoGift"
+              src="./assets/casas-bahia_1604578944.jpg"
+              alt="Logo casas bahia"
+            />
+            <p>Casas Bahia</p>
+          </a>
+          <a
+            class="infoContainerGift"
+            href="https://www.havan.com.br/"
+            target="_blank"
+          >
+            <img
+              class="logoGift"
+              src="./assets/havan-logo-0.png"
+              alt="Logo Havan"
+            />
+            <p>Havan</p>
+          </a>
+        </div>
       </section>
     </div>
   </body>
