@@ -51,13 +51,17 @@ footer {
   padding-bottom: 50px;
 
   ul {
-    @include flex(flex, center, center, _);
-    flex-wrap: wrap;
+    @include flex(flex, center, center, column);
+
+    .column {
+      display: flex;
+    }
 
     li {
       @include flex(flex, _, center, column);
       width: 96px;
       cursor: pointer;
+      margin-top: 8px;
     }
     .iconBackground {
       @include flex(flex, center, center, _);
@@ -74,6 +78,14 @@ footer {
       margin-top: 10px;
       text-align: center;
       font-size: xx-small;
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  footer {
+    ul {
+      @include flex(flex, center, center, row);
     }
   }
 }

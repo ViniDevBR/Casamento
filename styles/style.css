@@ -99,8 +99,10 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: _;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+footer ul .column {
+  display: flex;
 }
 footer ul li {
   display: flex;
@@ -109,6 +111,7 @@ footer ul li {
   flex-direction: column;
   width: 96px;
   cursor: pointer;
+  margin-top: 8px;
 }
 footer ul .iconBackground {
   display: flex;
@@ -129,6 +132,14 @@ footer ul .nomeDoLink {
   font-size: xx-small;
 }
 
+@media (min-width: 400px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
 .modal {
   font-size: 1.6rem;
   display: flex;
