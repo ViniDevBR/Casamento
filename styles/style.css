@@ -100,6 +100,7 @@ footer ul {
   justify-content: center;
   align-items: center;
   flex-direction: _;
+  flex-wrap: wrap;
 }
 footer ul li {
   display: flex;
@@ -182,6 +183,22 @@ footer ul .nomeDoLink {
 }
 .modal section .giftContainer .logoGift {
   width: 100px;
+}
+.modal section .alertContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 16px;
+  text-align: center;
+}
+.modal section .alertContainer .buttonWhatsapp {
+  background-color: #287ba4;
+  padding: 12px 16px;
+  margin-top: 32px;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */
