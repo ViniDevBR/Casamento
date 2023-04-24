@@ -10,6 +10,10 @@ const closeModalWhatsapp = document.querySelector('#closeModalWhatsapp')
 const closeModalWhatsappByButton = document.querySelector(
   '#closeModalWhatsappByButton'
 )
+const inputName = document.querySelector('#inputName')
+const form = document.querySelector('#form')
+
+closeModalWhatsappByButton.disabled = true
 
 openModalMoney.addEventListener('click', () => {
   modalMoney.classList.add('isModalOpen')
@@ -39,5 +43,23 @@ closeModalWhatsapp.addEventListener('click', () => {
 })
 
 closeModalWhatsappByButton.addEventListener('click', () => {
+  const nameOfPerson = inputName.value
+  window.open(
+    `https://wa.me/5519981316770?text=Ola+Mari%2C+viemos+confirmar+nossa+presen%C3%A7a+em+seu+casamento.%0ANosso+nome:+${nameOfPerson}`
+  )
   modalWhatsapp.classList.remove('isModalOpen')
+  closeModalWhatsappByButton.classList.add('disabled')
+  form.reset()
+})
+
+inputName.addEventListener('input', () => {
+  const nameOfPerson = inputName.value
+
+  if (nameOfPerson !== null && nameOfPerson !== '') {
+    closeModalWhatsappByButton.classList.remove('disabled')
+    closeModalWhatsappByButton.disabled = false
+  } else {
+    closeModalWhatsappByButton.classList.add('disabled')
+    closeModalWhatsappByButton.disabled = true
+  }
 })
