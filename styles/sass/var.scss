@@ -40,12 +40,11 @@ body {
     $bg-color-gradient-B 50%,
     $bg-color-gradient-C 90%
   );
-
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
 
   .florTOP {
     position: absolute;
