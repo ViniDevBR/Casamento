@@ -175,6 +175,11 @@ footer {
           color: $text-color;
           font-family: 'Cinzel', serif;
         }
+        .obrigatorio {
+          display: block;
+          color: $text-color5;
+          font-size: xx-small;
+        }
       }
     }
   }

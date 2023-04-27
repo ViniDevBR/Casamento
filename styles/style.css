@@ -233,5 +233,10 @@ footer ul .nomeDoLink {
   color: #000000;
   font-family: "Cinzel", serif;
 }
+.modal section .alertContainer form .obrigatorio {
+  display: block;
+  color: #ff0000;
+  font-size: xx-small;
+}
 
 /*# sourceMappingURL=style.css.map */
