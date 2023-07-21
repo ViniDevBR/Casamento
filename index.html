@@ -25,7 +25,7 @@
         <span>casamento a ser realizada em</span>
       </p>
     </header>
-  
+
     <main>
       <div class="dataContainer">
         <span class="infoData">SÁBADO</span>
@@ -37,7 +37,7 @@
         <span class="infoData">15:30</span>
       </div>
     </main>
-  
+
     <footer>
       <ul>
         <div class="column">
@@ -49,13 +49,13 @@
             >
               <img class="icon" src="./assets/map.svg" alt="" />
             </a>
-            <p class="nomeDoLink">local de <p>cerimônia</p></p>
+            <p class="nomeDoLink">local de cerimônia</p>
           </li>
           <li>
             <div class="iconBackground" id="openModalWhatsapp">
               <img class="icon" src="./assets/personCheck.svg" alt="" />
             </div>
-            <p class="nomeDoLink">confirmar <p>presença</p></p>
+            <p class="nomeDoLink">confirmar presença</p>
           </li>
         </div>
         <div class="column">
@@ -63,20 +63,18 @@
             <div class="iconBackground" id="openModalGift">
               <img class="icon" src="./assets/gift.svg" alt="" />
             </div>
-            <p class="nomeDoLink">Lista de <p>Presente</p></p>
+            <p class="nomeDoLink">Lista de Presente</p>
           </li>
           <li>
             <div id="openModal" class="iconBackground">
               <img class="icon" src="./assets/coin.svg" alt="" />
             </div>
-            <p class="nomeDoLink">Presente 
-              <p>em dinheiro</p>
-            </p>
+            <p class="nomeDoLink">Presente em dinheiro</p>
           </li>
         </div>
       </ul>
     </footer>
-  
+
     <div class="modal" id="modalPIX">
       <section>
         <span class="close" id="closeModal">X</span>
@@ -87,11 +85,11 @@
         <p class="transferencia">Transfêrencia</p>
         <p>Banco Bradesco</p>
         <p>Código do banco: 237</p>
-        <p>Agência: 322</p>
-        <p>Conta: 20201-0</p>
+        <p>Agência: 399</p>
+        <p>Conta: 28989-2</p>
       </section>
     </div>
-  
+
     <div class="modal" id="modalPresente">
       <section>
         <span class="close" id="closeModalGift">X</span>
@@ -124,28 +122,32 @@
         </div>
       </section>
     </div>
-  
+
     <div class="modal" id="modalWhatsapp">
       <section>
         <span class="close" id="closeModalWhatsapp">X</span>
 
         <div class="alertContainer">
           <p>Confirmar presença até 22/06.</p>
-          
+
           <form id="form">
             <p>Digite seu nome <span class="obrigatorio">OBRIGATÓRIO</span></p>
-            <input 
-              id="inputName" 
-              class="input" 
+            <input
+              id="inputName"
+              class="input"
               type="text"
               placeholder="Ex.: Mariana e vinicius"
+            />
+            <button
+              type="button"
+              class="buttonWhatsapp disabled"
+              id="closeModalWhatsappByButton"
             >
-            <button type="button" class="buttonWhatsapp disabled" id="closeModalWhatsappByButton">
               <p>Confirmar</p>
             </button>
           </form>
         </div>
       </section>
-    </div> 
+    </div>
   </body>
 </html>
